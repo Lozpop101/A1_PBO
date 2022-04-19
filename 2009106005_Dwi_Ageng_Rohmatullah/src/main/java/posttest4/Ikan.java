@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Posttest3;
+package posttest4;
 
 /**
  *
  * @author Sezzan
  */
 
-public class Data {
+public class Ikan {
     
     private int id;
     private String jenisikan;
@@ -17,7 +17,7 @@ public class Data {
     private int jumlah;
     private int harga;
     
-    public Data(int id, String jenisikan, String warnaikan, int jumlah, int harga){
+    public Ikan(int id, String jenisikan, String warnaikan, int jumlah, int harga){
         this.id = id;
         this.jenisikan = jenisikan;
         this.warnaikan = warnaikan;
@@ -66,7 +66,22 @@ public class Data {
         System.out.println(" harga : Rp " + harga );
     }
 
+    public void InfojumharTunggal(int id){
+        System.out.println(" Informasi Penjualan jumlah ikan dan harga tunggal : ");
+        System.out.println(" no : " + id);
+        System.out.println(" Jumlah : " + jumlah );
+        System.out.println(" harga : Rp " + harga );
+    }
+
     public void IkanTerjual(){
         System.out.print(jenisikan + ", ");
+    }
+
+    public String jenislaut() {
+        return ((AirLaut)this).getLaut();
+    }
+
+    public String jenistawar() {
+        return ((AirTawar)this).getTawar();
     }
 }
